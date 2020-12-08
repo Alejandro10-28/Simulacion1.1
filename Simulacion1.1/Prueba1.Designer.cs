@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prueba1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCustomLabel7 = new ns1.BunifuCustomLabel();
             this.txtAlfa = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.txtConfianza = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomLabel8 = new ns1.BunifuCustomLabel();
+            this.lblR2 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel9 = new ns1.BunifuCustomLabel();
             this.txtPromedio = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,13 +65,10 @@
             this.CCorridas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cnumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlarriba = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pbxMaximizar = new System.Windows.Forms.PictureBox();
-            this.pbxCerrar = new System.Windows.Forms.PictureBox();
             this.pntablero = new System.Windows.Forms.Panel();
             this.gbxC = new System.Windows.Forms.GroupBox();
-            this.btnVarianza = new ns1.BunifuFlatButton();
             this.gbxPromedio = new System.Windows.Forms.GroupBox();
+            this.btnVarianza = new ns1.BunifuFlatButton();
             this.BtnPromedios = new ns1.BunifuFlatButton();
             this.bunifuGradientPanel1 = new ns1.BunifuGradientPanel();
             this.btnGenerador = new ns1.BunifuImageButton();
@@ -92,17 +89,21 @@
             this.txtm = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.txta = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.txtX = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxMaximizar = new System.Windows.Forms.PictureBox();
+            this.pbxCerrar = new System.Windows.Forms.PictureBox();
+            this.bunifuCustomLabel17 = new ns1.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCorridas)).BeginInit();
             this.pnlarriba.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
             this.pntablero.SuspendLayout();
             this.gbxC.SuspendLayout();
             this.gbxPromedio.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnGenerador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPseudoaleatorio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel7
@@ -120,6 +121,7 @@
             this.txtAlfa.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtAlfa.Location = new System.Drawing.Point(178, 58);
             this.txtAlfa.Name = "txtAlfa";
+            this.txtAlfa.ReadOnly = true;
             this.txtAlfa.Size = new System.Drawing.Size(100, 23);
             this.txtAlfa.TabIndex = 30;
             // 
@@ -131,13 +133,16 @@
             this.txtConfianza.Size = new System.Drawing.Size(100, 23);
             this.txtConfianza.TabIndex = 31;
             // 
-            // bunifuCustomLabel8
+            // lblR2
             // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(85, 236);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(0, 15);
-            this.bunifuCustomLabel8.TabIndex = 32;
+            this.lblR2.AutoSize = true;
+            this.lblR2.BackColor = System.Drawing.Color.Transparent;
+            this.lblR2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR2.ForeColor = System.Drawing.Color.White;
+            this.lblR2.Location = new System.Drawing.Point(552, 148);
+            this.lblR2.Name = "lblR2";
+            this.lblR2.Size = new System.Drawing.Size(0, 18);
+            this.lblR2.TabIndex = 32;
             // 
             // bunifuCustomLabel9
             // 
@@ -154,6 +159,7 @@
             this.txtPromedio.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtPromedio.Location = new System.Drawing.Point(178, 87);
             this.txtPromedio.Name = "txtPromedio";
+            this.txtPromedio.ReadOnly = true;
             this.txtPromedio.Size = new System.Drawing.Size(100, 23);
             this.txtPromedio.TabIndex = 34;
             // 
@@ -182,6 +188,7 @@
             this.txtZ.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtZ.Location = new System.Drawing.Point(178, 116);
             this.txtZ.Name = "txtZ";
+            this.txtZ.ReadOnly = true;
             this.txtZ.Size = new System.Drawing.Size(100, 23);
             this.txtZ.TabIndex = 37;
             // 
@@ -200,6 +207,7 @@
             this.txtDistribucion.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtDistribucion.Location = new System.Drawing.Point(191, 145);
             this.txtDistribucion.Name = "txtDistribucion";
+            this.txtDistribucion.ReadOnly = true;
             this.txtDistribucion.Size = new System.Drawing.Size(85, 23);
             this.txtDistribucion.TabIndex = 39;
             // 
@@ -208,8 +216,10 @@
             this.txtLI.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtLI.Location = new System.Drawing.Point(178, 176);
             this.txtLI.Name = "txtLI";
+            this.txtLI.ReadOnly = true;
             this.txtLI.Size = new System.Drawing.Size(100, 23);
             this.txtLI.TabIndex = 40;
+            this.txtLI.TextChanged += new System.EventHandler(this.txtLI_TextChanged);
             // 
             // bunifuCustomLabel12
             // 
@@ -226,6 +236,7 @@
             this.txtLS.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtLS.Location = new System.Drawing.Point(178, 205);
             this.txtLS.Name = "txtLS";
+            this.txtLS.ReadOnly = true;
             this.txtLS.Size = new System.Drawing.Size(100, 23);
             this.txtLS.TabIndex = 42;
             // 
@@ -242,9 +253,12 @@
             // lblr
             // 
             this.lblr.AutoSize = true;
-            this.lblr.Location = new System.Drawing.Point(201, 596);
+            this.lblr.BackColor = System.Drawing.Color.Transparent;
+            this.lblr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblr.ForeColor = System.Drawing.Color.White;
+            this.lblr.Location = new System.Drawing.Point(551, 52);
             this.lblr.Name = "lblr";
-            this.lblr.Size = new System.Drawing.Size(0, 13);
+            this.lblr.Size = new System.Drawing.Size(0, 18);
             this.lblr.TabIndex = 44;
             // 
             // txtTotalC
@@ -252,6 +266,7 @@
             this.txtTotalC.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtTotalC.Location = new System.Drawing.Point(166, 134);
             this.txtTotalC.Name = "txtTotalC";
+            this.txtTotalC.ReadOnly = true;
             this.txtTotalC.Size = new System.Drawing.Size(100, 23);
             this.txtTotalC.TabIndex = 52;
             // 
@@ -281,8 +296,10 @@
             this.txtDestadisticos.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtDestadisticos.Location = new System.Drawing.Point(166, 105);
             this.txtDestadisticos.Name = "txtDestadisticos";
+            this.txtDestadisticos.ReadOnly = true;
             this.txtDestadisticos.Size = new System.Drawing.Size(100, 23);
             this.txtDestadisticos.TabIndex = 49;
+            this.txtDestadisticos.TextChanged += new System.EventHandler(this.txtDestadisticos_TextChanged);
             // 
             // bunifuCustomLabel15
             // 
@@ -299,6 +316,7 @@
             this.txtVe.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtVe.Location = new System.Drawing.Point(166, 48);
             this.txtVe.Name = "txtVe";
+            this.txtVe.ReadOnly = true;
             this.txtVe.Size = new System.Drawing.Size(100, 23);
             this.txtVe.TabIndex = 47;
             // 
@@ -307,6 +325,7 @@
             this.txtVarianza.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtVarianza.Location = new System.Drawing.Point(166, 76);
             this.txtVarianza.Name = "txtVarianza";
+            this.txtVarianza.ReadOnly = true;
             this.txtVarianza.Size = new System.Drawing.Size(100, 23);
             this.txtVarianza.TabIndex = 46;
             // 
@@ -323,47 +342,47 @@
             // dgvCorridas
             // 
             this.dgvCorridas.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCorridas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCorridas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvCorridas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCorridas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCorridas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvCorridas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCorridas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CCorridas,
             this.Cnumero});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCorridas.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCorridas.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvCorridas.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dgvCorridas.Location = new System.Drawing.Point(615, 302);
             this.dgvCorridas.Name = "dgvCorridas";
             this.dgvCorridas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCorridas.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCorridas.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvCorridas.Size = new System.Drawing.Size(243, 306);
             this.dgvCorridas.TabIndex = 54;
             this.dgvCorridas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCorridas_CellContentClick);
@@ -390,39 +409,6 @@
             this.pnlarriba.Size = new System.Drawing.Size(861, 40);
             this.pnlarriba.TabIndex = 55;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Simulacion1._1.Properties.Resources.volver;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pbxMaximizar
-            // 
-            this.pbxMaximizar.Image = global::Simulacion1._1.Properties.Resources.minimizar__3_;
-            this.pbxMaximizar.Location = new System.Drawing.Point(781, 3);
-            this.pbxMaximizar.Name = "pbxMaximizar";
-            this.pbxMaximizar.Size = new System.Drawing.Size(31, 30);
-            this.pbxMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxMaximizar.TabIndex = 3;
-            this.pbxMaximizar.TabStop = false;
-            this.pbxMaximizar.Click += new System.EventHandler(this.pbxMaximizar_Click);
-            // 
-            // pbxCerrar
-            // 
-            this.pbxCerrar.Image = global::Simulacion1._1.Properties.Resources.cerrar__2_;
-            this.pbxCerrar.Location = new System.Drawing.Point(818, 3);
-            this.pbxCerrar.Name = "pbxCerrar";
-            this.pbxCerrar.Size = new System.Drawing.Size(31, 30);
-            this.pbxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxCerrar.TabIndex = 0;
-            this.pbxCerrar.TabStop = false;
-            this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
-            // 
             // pntablero
             // 
             this.pntablero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
@@ -448,7 +434,6 @@
             this.gbxC.Controls.Add(this.txtVarianza);
             this.gbxC.Controls.Add(this.txtTotalC);
             this.gbxC.Controls.Add(this.bunifuCustomLabel14);
-            this.gbxC.Controls.Add(this.bunifuCustomLabel8);
             this.gbxC.Controls.Add(this.bunifuCustomLabel16);
             this.gbxC.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxC.ForeColor = System.Drawing.Color.White;
@@ -458,43 +443,6 @@
             this.gbxC.TabIndex = 58;
             this.gbxC.TabStop = false;
             this.gbxC.Text = "Corrida arriba y abajo";
-            // 
-            // btnVarianza
-            // 
-            this.btnVarianza.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnVarianza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(42)))), ((int)(((byte)(74)))));
-            this.btnVarianza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnVarianza.BorderRadius = 0;
-            this.btnVarianza.ButtonText = "Iniciar";
-            this.btnVarianza.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVarianza.DisabledColor = System.Drawing.Color.Gray;
-            this.btnVarianza.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnVarianza.Iconimage = global::Simulacion1._1.Properties.Resources.flechas_arriba_y_abajo;
-            this.btnVarianza.Iconimage_right = null;
-            this.btnVarianza.Iconimage_right_Selected = null;
-            this.btnVarianza.Iconimage_Selected = null;
-            this.btnVarianza.IconMarginLeft = 0;
-            this.btnVarianza.IconMarginRight = 0;
-            this.btnVarianza.IconRightVisible = true;
-            this.btnVarianza.IconRightZoom = 0D;
-            this.btnVarianza.IconVisible = true;
-            this.btnVarianza.IconZoom = 70D;
-            this.btnVarianza.IsTab = false;
-            this.btnVarianza.Location = new System.Drawing.Point(88, 217);
-            this.btnVarianza.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnVarianza.Name = "btnVarianza";
-            this.btnVarianza.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(42)))), ((int)(((byte)(74)))));
-            this.btnVarianza.OnHovercolor = System.Drawing.Color.Blue;
-            this.btnVarianza.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnVarianza.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnVarianza.selected = false;
-            this.btnVarianza.Size = new System.Drawing.Size(118, 55);
-            this.btnVarianza.TabIndex = 53;
-            this.btnVarianza.Text = "Iniciar";
-            this.btnVarianza.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVarianza.Textcolor = System.Drawing.Color.White;
-            this.btnVarianza.TextFont = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVarianza.Click += new System.EventHandler(this.btnVarianza_Click);
             // 
             // gbxPromedio
             // 
@@ -522,6 +470,43 @@
             this.gbxPromedio.TabIndex = 57;
             this.gbxPromedio.TabStop = false;
             this.gbxPromedio.Text = "Promedio";
+            // 
+            // btnVarianza
+            // 
+            this.btnVarianza.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnVarianza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(42)))), ((int)(((byte)(74)))));
+            this.btnVarianza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVarianza.BorderRadius = 0;
+            this.btnVarianza.ButtonText = "Iniciar";
+            this.btnVarianza.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVarianza.DisabledColor = System.Drawing.Color.Gray;
+            this.btnVarianza.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnVarianza.Iconimage = global::Simulacion1._1.Properties.Resources.flechas_arriba_y_abajo;
+            this.btnVarianza.Iconimage_right = null;
+            this.btnVarianza.Iconimage_right_Selected = null;
+            this.btnVarianza.Iconimage_Selected = null;
+            this.btnVarianza.IconMarginLeft = 0;
+            this.btnVarianza.IconMarginRight = 0;
+            this.btnVarianza.IconRightVisible = true;
+            this.btnVarianza.IconRightZoom = 0D;
+            this.btnVarianza.IconVisible = true;
+            this.btnVarianza.IconZoom = 70D;
+            this.btnVarianza.IsTab = false;
+            this.btnVarianza.Location = new System.Drawing.Point(80, 236);
+            this.btnVarianza.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnVarianza.Name = "btnVarianza";
+            this.btnVarianza.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(42)))), ((int)(((byte)(74)))));
+            this.btnVarianza.OnHovercolor = System.Drawing.Color.Blue;
+            this.btnVarianza.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnVarianza.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnVarianza.selected = false;
+            this.btnVarianza.Size = new System.Drawing.Size(126, 55);
+            this.btnVarianza.TabIndex = 53;
+            this.btnVarianza.Text = "Iniciar";
+            this.btnVarianza.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVarianza.Textcolor = System.Drawing.Color.White;
+            this.btnVarianza.TextFont = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVarianza.Click += new System.EventHandler(this.btnVarianza_Click);
             // 
             // BtnPromedios
             // 
@@ -563,13 +548,16 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel17);
             this.bunifuGradientPanel1.Controls.Add(this.btnGenerador);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel6);
+            this.bunifuGradientPanel1.Controls.Add(this.lblr);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel4);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel3);
             this.bunifuGradientPanel1.Controls.Add(this.dgvPseudoaleatorio);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel5);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel2);
+            this.bunifuGradientPanel1.Controls.Add(this.lblR2);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel1);
             this.bunifuGradientPanel1.Controls.Add(this.txtCantidad);
             this.bunifuGradientPanel1.Controls.Add(this.txtc);
@@ -639,23 +627,23 @@
             // dgvPseudoaleatorio
             // 
             this.dgvPseudoaleatorio.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvPseudoaleatorio.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvPseudoaleatorio.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvPseudoaleatorio.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvPseudoaleatorio.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPseudoaleatorio.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPseudoaleatorio.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvPseudoaleatorio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPseudoaleatorio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cvalores,
@@ -667,22 +655,22 @@
             this.dgvPseudoaleatorio.GridColor = System.Drawing.Color.Black;
             this.dgvPseudoaleatorio.Location = new System.Drawing.Point(299, 3);
             this.dgvPseudoaleatorio.Name = "dgvPseudoaleatorio";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPseudoaleatorio.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvPseudoaleatorio.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvPseudoaleatorio.Size = new System.Drawing.Size(544, 278);
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPseudoaleatorio.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvPseudoaleatorio.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.dgvPseudoaleatorio.Size = new System.Drawing.Size(241, 278);
             this.dgvPseudoaleatorio.TabIndex = 26;
             // 
             // Cvalores
@@ -755,6 +743,7 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 26);
             this.txtCantidad.TabIndex = 20;
+            this.txtCantidad.Text = "100";
             // 
             // txtc
             // 
@@ -765,6 +754,7 @@
             this.txtc.Name = "txtc";
             this.txtc.Size = new System.Drawing.Size(100, 26);
             this.txtc.TabIndex = 19;
+            this.txtc.Text = "221";
             // 
             // txtm
             // 
@@ -775,6 +765,7 @@
             this.txtm.Name = "txtm";
             this.txtm.Size = new System.Drawing.Size(100, 26);
             this.txtm.TabIndex = 18;
+            this.txtm.Text = "17001";
             // 
             // txta
             // 
@@ -785,6 +776,7 @@
             this.txta.Name = "txta";
             this.txta.Size = new System.Drawing.Size(100, 26);
             this.txta.TabIndex = 17;
+            this.txta.Text = "101";
             // 
             // txtX
             // 
@@ -795,6 +787,53 @@
             this.txtX.Name = "txtX";
             this.txtX.Size = new System.Drawing.Size(100, 26);
             this.txtX.TabIndex = 16;
+            this.txtX.Text = "17";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Red;
+            this.pictureBox1.Image = global::Simulacion1._1.Properties.Resources.volver;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pbxMaximizar
+            // 
+            this.pbxMaximizar.Image = global::Simulacion1._1.Properties.Resources.minimizar__3_;
+            this.pbxMaximizar.Location = new System.Drawing.Point(781, 3);
+            this.pbxMaximizar.Name = "pbxMaximizar";
+            this.pbxMaximizar.Size = new System.Drawing.Size(31, 30);
+            this.pbxMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxMaximizar.TabIndex = 3;
+            this.pbxMaximizar.TabStop = false;
+            this.pbxMaximizar.Click += new System.EventHandler(this.pbxMaximizar_Click);
+            // 
+            // pbxCerrar
+            // 
+            this.pbxCerrar.Image = global::Simulacion1._1.Properties.Resources.cerrar__2_;
+            this.pbxCerrar.Location = new System.Drawing.Point(818, 3);
+            this.pbxCerrar.Name = "pbxCerrar";
+            this.pbxCerrar.Size = new System.Drawing.Size(31, 30);
+            this.pbxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxCerrar.TabIndex = 0;
+            this.pbxCerrar.TabStop = false;
+            this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
+            // 
+            // bunifuCustomLabel17
+            // 
+            this.bunifuCustomLabel17.AutoSize = true;
+            this.bunifuCustomLabel17.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel17.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel17.Location = new System.Drawing.Point(582, 21);
+            this.bunifuCustomLabel17.Name = "bunifuCustomLabel17";
+            this.bunifuCustomLabel17.Size = new System.Drawing.Size(103, 18);
+            this.bunifuCustomLabel17.TabIndex = 45;
+            this.bunifuCustomLabel17.Text = "Resultados:";
             // 
             // Prueba1
             // 
@@ -803,16 +842,13 @@
             this.ClientSize = new System.Drawing.Size(861, 655);
             this.Controls.Add(this.pntablero);
             this.Controls.Add(this.pnlarriba);
-            this.Controls.Add(this.lblr);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Prueba1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prueba1";
             this.Load += new System.EventHandler(this.Prueba1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCorridas)).EndInit();
             this.pnlarriba.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
             this.pntablero.ResumeLayout(false);
             this.gbxC.ResumeLayout(false);
             this.gbxC.PerformLayout();
@@ -822,8 +858,10 @@
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnGenerador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPseudoaleatorio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -850,7 +888,7 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel7;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtAlfa;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtConfianza;
-        private ns1.BunifuCustomLabel bunifuCustomLabel8;
+        private ns1.BunifuCustomLabel lblR2;
         private ns1.BunifuCustomLabel bunifuCustomLabel9;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtPromedio;
         private System.Windows.Forms.Label label1;
@@ -884,5 +922,6 @@
         private System.Windows.Forms.GroupBox gbxC;
         private ns1.BunifuImageButton btnGenerador;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private ns1.BunifuCustomLabel bunifuCustomLabel17;
     }
 }

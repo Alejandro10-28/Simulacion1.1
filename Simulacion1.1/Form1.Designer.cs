@@ -167,7 +167,7 @@
             this.btnManto.IconVisible = true;
             this.btnManto.IconZoom = 70D;
             this.btnManto.IsTab = false;
-            this.btnManto.Location = new System.Drawing.Point(4, 228);
+            this.btnManto.Location = new System.Drawing.Point(4, 177);
             this.btnManto.Margin = new System.Windows.Forms.Padding(4);
             this.btnManto.Name = "btnManto";
             this.btnManto.Normalcolor = System.Drawing.Color.Transparent;
@@ -204,7 +204,7 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 70D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(4, 104);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(4, 119);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
@@ -241,7 +241,7 @@
             this.btnPrueba2.IconVisible = true;
             this.btnPrueba2.IconZoom = 70D;
             this.btnPrueba2.IsTab = false;
-            this.btnPrueba2.Location = new System.Drawing.Point(0, 162);
+            this.btnPrueba2.Location = new System.Drawing.Point(0, 235);
             this.btnPrueba2.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrueba2.Name = "btnPrueba2";
             this.btnPrueba2.Normalcolor = System.Drawing.Color.Transparent;

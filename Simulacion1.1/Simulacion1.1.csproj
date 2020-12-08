@@ -123,27 +123,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cargando.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cerrar %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\maximizar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\maximizar %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimizar %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimizar %282%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimizar %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\precaucion.png" />
   </ItemGroup>
   <ItemGroup>

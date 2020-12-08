@@ -100,7 +100,6 @@
             // pbcRestaurar
             // 
             this.pbcRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbcRestaurar.Image = global::Simulacion1._1.Properties.Resources.minimizar__2_;
             this.pbcRestaurar.Location = new System.Drawing.Point(782, 4);
             this.pbcRestaurar.Name = "pbcRestaurar";
             this.pbcRestaurar.Size = new System.Drawing.Size(31, 30);
@@ -111,7 +110,6 @@
             // pbxCerrar
             // 
             this.pbxCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxCerrar.Image = global::Simulacion1._1.Properties.Resources.cerrar__1_;
             this.pbxCerrar.Location = new System.Drawing.Point(819, 3);
             this.pbxCerrar.Name = "pbxCerrar";
             this.pbxCerrar.Size = new System.Drawing.Size(31, 30);
