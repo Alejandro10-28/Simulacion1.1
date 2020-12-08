@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PruebaM));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -58,26 +59,44 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PruebaM));
             this.pnlarriba = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbxMaximizar = new System.Windows.Forms.PictureBox();
             this.pbxCerrar = new System.Windows.Forms.PictureBox();
             this.pntablero = new System.Windows.Forms.Panel();
+            this.btnLimpiar = new ns1.BunifuThinButton2();
+            this.bunifuCustomLabel16 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel15 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel14 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel13 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel12 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel11 = new ns1.BunifuCustomLabel();
             this.lblContaminantes = new ns1.BunifuCustomLabel();
             this.lblResultados = new ns1.BunifuCustomLabel();
             this.lblRespuestaMuestra = new ns1.BunifuCustomLabel();
             this.btnCompararContaminantes = new ns1.BunifuThinButton2();
             this.dgvResultadoContaminantes = new System.Windows.Forms.DataGridView();
+            this.Cri1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cri2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cri3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cri4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cresultados1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cresultados2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cresultados3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cresultados4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtN = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel10 = new ns1.BunifuCustomLabel();
             this.btnB2 = new ns1.BunifuThinButton2();
             this.dgvValores = new System.Windows.Forms.DataGridView();
-            this.Cmuestras = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ccontaminantes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBusqueda = new ns1.BunifuThinButton2();
             this.btnComparar = new ns1.BunifuThinButton2();
             this.dgvresultado = new System.Windows.Forms.DataGridView();
+            this.Cinicial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.C2semanas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CMes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cresultado1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cresultado2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cresultado3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtV1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.txtv2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel9 = new ns1.BunifuCustomLabel();
@@ -112,27 +131,8 @@
             this.btnGenerador = new ns1.BunifuImageButton();
             this.bunifuCustomLabel7 = new ns1.BunifuCustomLabel();
             this.txtCantidad = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomLabel11 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel12 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel13 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel14 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel15 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel16 = new ns1.BunifuCustomLabel();
-            this.Cinicial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.C2semanas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CMes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cresultado1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cresultado2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cresultado3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cri1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cri2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cri3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cri4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cresultados1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cresultados2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cresultados3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cresultados4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnLimpiar = new ns1.BunifuThinButton2();
+            this.Cmuestras = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ccontaminantes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlarriba.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaximizar)).BeginInit();
@@ -157,7 +157,7 @@
             this.pnlarriba.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlarriba.Location = new System.Drawing.Point(0, 0);
             this.pnlarriba.Name = "pnlarriba";
-            this.pnlarriba.Size = new System.Drawing.Size(1386, 40);
+            this.pnlarriba.Size = new System.Drawing.Size(1277, 40);
             this.pnlarriba.TabIndex = 56;
             // 
             // pictureBox1
@@ -175,7 +175,7 @@
             // 
             this.pbxMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbxMaximizar.Image = global::Simulacion1._1.Properties.Resources.minimizar__3_;
-            this.pbxMaximizar.Location = new System.Drawing.Point(1315, 3);
+            this.pbxMaximizar.Location = new System.Drawing.Point(1206, 3);
             this.pbxMaximizar.Name = "pbxMaximizar";
             this.pbxMaximizar.Size = new System.Drawing.Size(31, 30);
             this.pbxMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -186,7 +186,7 @@
             // 
             this.pbxCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbxCerrar.Image = global::Simulacion1._1.Properties.Resources.cerrar__2_;
-            this.pbxCerrar.Location = new System.Drawing.Point(1352, 3);
+            this.pbxCerrar.Location = new System.Drawing.Point(1243, 3);
             this.pbxCerrar.Name = "pbxCerrar";
             this.pbxCerrar.Size = new System.Drawing.Size(31, 30);
             this.pbxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -228,15 +228,107 @@
             this.pntablero.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pntablero.Location = new System.Drawing.Point(0, 40);
             this.pntablero.Name = "pntablero";
-            this.pntablero.Size = new System.Drawing.Size(1386, 614);
+            this.pntablero.Size = new System.Drawing.Size(1277, 614);
             this.pntablero.TabIndex = 58;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.ActiveBorderThickness = 1;
+            this.btnLimpiar.ActiveCornerRadius = 20;
+            this.btnLimpiar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnLimpiar.ActiveForecolor = System.Drawing.Color.White;
+            this.btnLimpiar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnLimpiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.BackgroundImage")));
+            this.btnLimpiar.ButtonText = "Limpiar";
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnLimpiar.IdleBorderThickness = 1;
+            this.btnLimpiar.IdleCornerRadius = 20;
+            this.btnLimpiar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnLimpiar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnLimpiar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnLimpiar.Location = new System.Drawing.Point(1016, 462);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(181, 41);
+            this.btnLimpiar.TabIndex = 62;
+            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // bunifuCustomLabel16
+            // 
+            this.bunifuCustomLabel16.AutoSize = true;
+            this.bunifuCustomLabel16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel16.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel16.Location = new System.Drawing.Point(742, 0);
+            this.bunifuCustomLabel16.Name = "bunifuCustomLabel16";
+            this.bunifuCustomLabel16.Size = new System.Drawing.Size(245, 18);
+            this.bunifuCustomLabel16.TabIndex = 61;
+            this.bunifuCustomLabel16.Text = "Resultados de contaminantes\r\n";
+            // 
+            // bunifuCustomLabel15
+            // 
+            this.bunifuCustomLabel15.AutoSize = true;
+            this.bunifuCustomLabel15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel15.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel15.Location = new System.Drawing.Point(1013, 0);
+            this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
+            this.bunifuCustomLabel15.Size = new System.Drawing.Size(246, 18);
+            this.bunifuCustomLabel15.TabIndex = 60;
+            this.bunifuCustomLabel15.Text = "Resultados análisis de sangre";
+            // 
+            // bunifuCustomLabel14
+            // 
+            this.bunifuCustomLabel14.AutoSize = true;
+            this.bunifuCustomLabel14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel14.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel14.Location = new System.Drawing.Point(554, 3);
+            this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
+            this.bunifuCustomLabel14.Size = new System.Drawing.Size(151, 18);
+            this.bunifuCustomLabel14.TabIndex = 59;
+            this.bunifuCustomLabel14.Text = "Números elegidos";
+            // 
+            // bunifuCustomLabel13
+            // 
+            this.bunifuCustomLabel13.AutoSize = true;
+            this.bunifuCustomLabel13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel13.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(292, 3);
+            this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
+            this.bunifuCustomLabel13.Size = new System.Drawing.Size(189, 18);
+            this.bunifuCustomLabel13.TabIndex = 58;
+            this.bunifuCustomLabel13.Text = "Num.Pseudoaleatorios";
+            // 
+            // bunifuCustomLabel12
+            // 
+            this.bunifuCustomLabel12.AutoSize = true;
+            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel12.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(642, 307);
+            this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(332, 18);
+            this.bunifuCustomLabel12.TabIndex = 57;
+            this.bunifuCustomLabel12.Text = "CONCENTRACION DE CONTAMINANTES";
+            // 
+            // bunifuCustomLabel11
+            // 
+            this.bunifuCustomLabel11.AutoSize = true;
+            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(347, 307);
+            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(188, 18);
+            this.bunifuCustomLabel11.TabIndex = 56;
+            this.bunifuCustomLabel11.Text = "ANÁLISIS DE SANGRE";
             // 
             // lblContaminantes
             // 
             this.lblContaminantes.AutoSize = true;
             this.lblContaminantes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContaminantes.ForeColor = System.Drawing.Color.White;
-            this.lblContaminantes.Location = new System.Drawing.Point(1001, 454);
+            this.lblContaminantes.Location = new System.Drawing.Point(609, 542);
             this.lblContaminantes.Name = "lblContaminantes";
             this.lblContaminantes.Size = new System.Drawing.Size(0, 18);
             this.lblContaminantes.TabIndex = 55;
@@ -257,7 +349,7 @@
             this.lblRespuestaMuestra.AutoSize = true;
             this.lblRespuestaMuestra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRespuestaMuestra.ForeColor = System.Drawing.Color.White;
-            this.lblRespuestaMuestra.Location = new System.Drawing.Point(1003, 358);
+            this.lblRespuestaMuestra.Location = new System.Drawing.Point(308, 542);
             this.lblRespuestaMuestra.Name = "lblRespuestaMuestra";
             this.lblRespuestaMuestra.Size = new System.Drawing.Size(0, 18);
             this.lblRespuestaMuestra.TabIndex = 53;
@@ -269,7 +361,7 @@
             this.btnCompararContaminantes.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnCompararContaminantes.ActiveForecolor = System.Drawing.Color.White;
             this.btnCompararContaminantes.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCompararContaminantes.BackColor = System.Drawing.Color.Transparent;
+            this.btnCompararContaminantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnCompararContaminantes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCompararContaminantes.BackgroundImage")));
             this.btnCompararContaminantes.ButtonText = "Comparar analisis contaminantes";
             this.btnCompararContaminantes.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -280,7 +372,7 @@
             this.btnCompararContaminantes.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnCompararContaminantes.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnCompararContaminantes.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCompararContaminantes.Location = new System.Drawing.Point(986, 542);
+            this.btnCompararContaminantes.Location = new System.Drawing.Point(1016, 402);
             this.btnCompararContaminantes.Margin = new System.Windows.Forms.Padding(5);
             this.btnCompararContaminantes.Name = "btnCompararContaminantes";
             this.btnCompararContaminantes.Size = new System.Drawing.Size(181, 58);
@@ -348,6 +440,46 @@
             this.dgvResultadoContaminantes.Size = new System.Drawing.Size(362, 198);
             this.dgvResultadoContaminantes.TabIndex = 51;
             // 
+            // Cri1
+            // 
+            this.Cri1.HeaderText = "Ri1";
+            this.Cri1.Name = "Cri1";
+            // 
+            // Cri2
+            // 
+            this.Cri2.HeaderText = "Ri2";
+            this.Cri2.Name = "Cri2";
+            // 
+            // Cri3
+            // 
+            this.Cri3.HeaderText = "Ri3";
+            this.Cri3.Name = "Cri3";
+            // 
+            // Cri4
+            // 
+            this.Cri4.HeaderText = "Ri4";
+            this.Cri4.Name = "Cri4";
+            // 
+            // Cresultados1
+            // 
+            this.Cresultados1.HeaderText = "R1";
+            this.Cresultados1.Name = "Cresultados1";
+            // 
+            // Cresultados2
+            // 
+            this.Cresultados2.HeaderText = "R2";
+            this.Cresultados2.Name = "Cresultados2";
+            // 
+            // Cresultados3
+            // 
+            this.Cresultados3.HeaderText = "R3";
+            this.Cresultados3.Name = "Cresultados3";
+            // 
+            // Cresultados4
+            // 
+            this.Cresultados4.HeaderText = "R4";
+            this.Cresultados4.Name = "Cresultados4";
+            // 
             // txtN
             // 
             this.txtN.BorderColor = System.Drawing.Color.SeaGreen;
@@ -375,7 +507,7 @@
             this.btnB2.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnB2.ActiveForecolor = System.Drawing.Color.White;
             this.btnB2.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnB2.BackColor = System.Drawing.Color.Transparent;
+            this.btnB2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnB2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnB2.BackgroundImage")));
             this.btnB2.ButtonText = "Muestras de Contaminantes";
             this.btnB2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -449,17 +581,6 @@
             this.dgvValores.Size = new System.Drawing.Size(244, 271);
             this.dgvValores.TabIndex = 47;
             // 
-            // Cmuestras
-            // 
-            this.Cmuestras.HeaderText = "Muestras";
-            this.Cmuestras.Name = "Cmuestras";
-            // 
-            // Ccontaminantes
-            // 
-            this.Ccontaminantes.HeaderText = "Contaminantes";
-            this.Ccontaminantes.MinimumWidth = 10;
-            this.Ccontaminantes.Name = "Ccontaminantes";
-            // 
             // btnBusqueda
             // 
             this.btnBusqueda.ActiveBorderThickness = 1;
@@ -467,7 +588,7 @@
             this.btnBusqueda.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnBusqueda.ActiveForecolor = System.Drawing.Color.White;
             this.btnBusqueda.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnBusqueda.BackColor = System.Drawing.Color.Transparent;
+            this.btnBusqueda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnBusqueda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBusqueda.BackgroundImage")));
             this.btnBusqueda.ButtonText = "Muestras de Sangre";
             this.btnBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -493,7 +614,7 @@
             this.btnComparar.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnComparar.ActiveForecolor = System.Drawing.Color.White;
             this.btnComparar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnComparar.BackColor = System.Drawing.Color.Transparent;
+            this.btnComparar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnComparar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnComparar.BackgroundImage")));
             this.btnComparar.ButtonText = "Comparar analisis sangre";
             this.btnComparar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -504,10 +625,10 @@
             this.btnComparar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnComparar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnComparar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnComparar.Location = new System.Drawing.Point(1182, 542);
+            this.btnComparar.Location = new System.Drawing.Point(1016, 344);
             this.btnComparar.Margin = new System.Windows.Forms.Padding(5);
             this.btnComparar.Name = "btnComparar";
-            this.btnComparar.Size = new System.Drawing.Size(195, 58);
+            this.btnComparar.Size = new System.Drawing.Size(181, 58);
             this.btnComparar.TabIndex = 44;
             this.btnComparar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnComparar.Click += new System.EventHandler(this.btnComparar_Click);
@@ -570,6 +691,36 @@
             this.dgvresultado.Size = new System.Drawing.Size(318, 198);
             this.dgvresultado.TabIndex = 43;
             this.dgvresultado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvresultado_CellContentClick);
+            // 
+            // Cinicial
+            // 
+            this.Cinicial.HeaderText = "Inicial";
+            this.Cinicial.Name = "Cinicial";
+            // 
+            // C2semanas
+            // 
+            this.C2semanas.HeaderText = "2 semanas";
+            this.C2semanas.Name = "C2semanas";
+            // 
+            // CMes
+            // 
+            this.CMes.HeaderText = "Mes";
+            this.CMes.Name = "CMes";
+            // 
+            // Cresultado1
+            // 
+            this.Cresultado1.HeaderText = "R1";
+            this.Cresultado1.Name = "Cresultado1";
+            // 
+            // Cresultado2
+            // 
+            this.Cresultado2.HeaderText = "R2";
+            this.Cresultado2.Name = "Cresultado2";
+            // 
+            // Cresultado3
+            // 
+            this.Cresultado3.HeaderText = "R3";
+            this.Cresultado3.Name = "Cresultado3";
             // 
             // txtV1
             // 
@@ -665,7 +816,7 @@
             dataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.White;
             this.dgvContaminantes.RowsDefaultCellStyle = dataGridViewCellStyle50;
-            this.dgvContaminantes.Size = new System.Drawing.Size(283, 271);
+            this.dgvContaminantes.Size = new System.Drawing.Size(256, 271);
             this.dgvContaminantes.TabIndex = 38;
             this.dgvContaminantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContaminantes_CellContentClick);
             // 
@@ -701,7 +852,7 @@
             this.BtnCalculo.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.BtnCalculo.ActiveForecolor = System.Drawing.Color.White;
             this.BtnCalculo.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.BtnCalculo.BackColor = System.Drawing.Color.Transparent;
+            this.BtnCalculo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.BtnCalculo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCalculo.BackgroundImage")));
             this.BtnCalculo.ButtonText = "Calcular tablas";
             this.BtnCalculo.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -822,7 +973,7 @@
             this.dgvMuestra.DefaultCellStyle = dataGridViewCellStyle58;
             this.dgvMuestra.EnableHeadersVisualStyles = false;
             this.dgvMuestra.GridColor = System.Drawing.Color.Black;
-            this.dgvMuestra.Location = new System.Drawing.Point(1029, 21);
+            this.dgvMuestra.Location = new System.Drawing.Point(1004, 21);
             this.dgvMuestra.Name = "dgvMuestra";
             dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
@@ -839,7 +990,7 @@
             dataGridViewCellStyle60.SelectionBackColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle60.SelectionForeColor = System.Drawing.Color.White;
             this.dgvMuestra.RowsDefaultCellStyle = dataGridViewCellStyle60;
-            this.dgvMuestra.Size = new System.Drawing.Size(348, 271);
+            this.dgvMuestra.Size = new System.Drawing.Size(271, 271);
             this.dgvMuestra.TabIndex = 33;
             this.dgvMuestra.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMuestra_CellContentClick);
             // 
@@ -1033,173 +1184,22 @@
             this.txtCantidad.TabIndex = 6;
             this.txtCantidad.Text = "100";
             // 
-            // bunifuCustomLabel11
+            // Cmuestras
             // 
-            this.bunifuCustomLabel11.AutoSize = true;
-            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(347, 307);
-            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(188, 18);
-            this.bunifuCustomLabel11.TabIndex = 56;
-            this.bunifuCustomLabel11.Text = "ANÁLISIS DE SANGRE";
+            this.Cmuestras.HeaderText = "Sangre";
+            this.Cmuestras.Name = "Cmuestras";
             // 
-            // bunifuCustomLabel12
+            // Ccontaminantes
             // 
-            this.bunifuCustomLabel12.AutoSize = true;
-            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel12.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(642, 307);
-            this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
-            this.bunifuCustomLabel12.Size = new System.Drawing.Size(332, 18);
-            this.bunifuCustomLabel12.TabIndex = 57;
-            this.bunifuCustomLabel12.Text = "CONCENTRACION DE CONTAMINANTES";
-            // 
-            // bunifuCustomLabel13
-            // 
-            this.bunifuCustomLabel13.AutoSize = true;
-            this.bunifuCustomLabel13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel13.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(292, 3);
-            this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
-            this.bunifuCustomLabel13.Size = new System.Drawing.Size(189, 18);
-            this.bunifuCustomLabel13.TabIndex = 58;
-            this.bunifuCustomLabel13.Text = "Num.Pseudoaleatorios";
-            // 
-            // bunifuCustomLabel14
-            // 
-            this.bunifuCustomLabel14.AutoSize = true;
-            this.bunifuCustomLabel14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel14.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel14.Location = new System.Drawing.Point(554, 3);
-            this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
-            this.bunifuCustomLabel14.Size = new System.Drawing.Size(151, 18);
-            this.bunifuCustomLabel14.TabIndex = 59;
-            this.bunifuCustomLabel14.Text = "Números elegidos";
-            // 
-            // bunifuCustomLabel15
-            // 
-            this.bunifuCustomLabel15.AutoSize = true;
-            this.bunifuCustomLabel15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel15.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel15.Location = new System.Drawing.Point(750, 3);
-            this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
-            this.bunifuCustomLabel15.Size = new System.Drawing.Size(246, 18);
-            this.bunifuCustomLabel15.TabIndex = 60;
-            this.bunifuCustomLabel15.Text = "Resultados análisis de sangre";
-            // 
-            // bunifuCustomLabel16
-            // 
-            this.bunifuCustomLabel16.AutoSize = true;
-            this.bunifuCustomLabel16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel16.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel16.Location = new System.Drawing.Point(1040, 0);
-            this.bunifuCustomLabel16.Name = "bunifuCustomLabel16";
-            this.bunifuCustomLabel16.Size = new System.Drawing.Size(245, 18);
-            this.bunifuCustomLabel16.TabIndex = 61;
-            this.bunifuCustomLabel16.Text = "Resultados de contaminantes\r\n";
-            // 
-            // Cinicial
-            // 
-            this.Cinicial.HeaderText = "Inicial";
-            this.Cinicial.Name = "Cinicial";
-            // 
-            // C2semanas
-            // 
-            this.C2semanas.HeaderText = "2 semanas";
-            this.C2semanas.Name = "C2semanas";
-            // 
-            // CMes
-            // 
-            this.CMes.HeaderText = "Mes";
-            this.CMes.Name = "CMes";
-            // 
-            // Cresultado1
-            // 
-            this.Cresultado1.HeaderText = "R1";
-            this.Cresultado1.Name = "Cresultado1";
-            // 
-            // Cresultado2
-            // 
-            this.Cresultado2.HeaderText = "R2";
-            this.Cresultado2.Name = "Cresultado2";
-            // 
-            // Cresultado3
-            // 
-            this.Cresultado3.HeaderText = "R3";
-            this.Cresultado3.Name = "Cresultado3";
-            // 
-            // Cri1
-            // 
-            this.Cri1.HeaderText = "Ri1";
-            this.Cri1.Name = "Cri1";
-            // 
-            // Cri2
-            // 
-            this.Cri2.HeaderText = "Ri2";
-            this.Cri2.Name = "Cri2";
-            // 
-            // Cri3
-            // 
-            this.Cri3.HeaderText = "Ri3";
-            this.Cri3.Name = "Cri3";
-            // 
-            // Cri4
-            // 
-            this.Cri4.HeaderText = "Ri4";
-            this.Cri4.Name = "Cri4";
-            // 
-            // Cresultados1
-            // 
-            this.Cresultados1.HeaderText = "R1";
-            this.Cresultados1.Name = "Cresultados1";
-            // 
-            // Cresultados2
-            // 
-            this.Cresultados2.HeaderText = "R2";
-            this.Cresultados2.Name = "Cresultados2";
-            // 
-            // Cresultados3
-            // 
-            this.Cresultados3.HeaderText = "R3";
-            this.Cresultados3.Name = "Cresultados3";
-            // 
-            // Cresultados4
-            // 
-            this.Cresultados4.HeaderText = "R4";
-            this.Cresultados4.Name = "Cresultados4";
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.ActiveBorderThickness = 1;
-            this.btnLimpiar.ActiveCornerRadius = 20;
-            this.btnLimpiar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnLimpiar.ActiveForecolor = System.Drawing.Color.White;
-            this.btnLimpiar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnLimpiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.BackgroundImage")));
-            this.btnLimpiar.ButtonText = "Limpiar";
-            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnLimpiar.IdleBorderThickness = 1;
-            this.btnLimpiar.IdleCornerRadius = 20;
-            this.btnLimpiar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnLimpiar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnLimpiar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnLimpiar.Location = new System.Drawing.Point(221, 568);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(181, 41);
-            this.btnLimpiar.TabIndex = 62;
-            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            this.Ccontaminantes.HeaderText = "Contaminantes";
+            this.Ccontaminantes.MinimumWidth = 10;
+            this.Ccontaminantes.Name = "Ccontaminantes";
             // 
             // PruebaM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 654);
+            this.ClientSize = new System.Drawing.Size(1277, 654);
             this.Controls.Add(this.pntablero);
             this.Controls.Add(this.pnlarriba);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1269,8 +1269,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn cfrecuencia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cmuestras;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ccontaminantes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Datos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cprobabilidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClimInf;
@@ -1301,5 +1299,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cresultado2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cresultado3;
         private ns1.BunifuThinButton2 btnLimpiar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cmuestras;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ccontaminantes;
     }
 }

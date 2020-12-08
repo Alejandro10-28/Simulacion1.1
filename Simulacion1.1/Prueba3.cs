@@ -21,7 +21,7 @@ namespace Simulacion1._1
         private void btnGenerador_Click(object sender, EventArgs e)
         {
             int x0, A, C, M, n;
-
+            
             n = int.Parse(txtCantidad.Text);
             float[] arr = new float[n];
             x0 = int.Parse(txtX.Text);

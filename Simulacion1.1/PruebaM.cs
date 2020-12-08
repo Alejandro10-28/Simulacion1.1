@@ -34,34 +34,39 @@ namespace Simulacion1._1
 
         private void btnGenerador_Click(object sender, EventArgs e)
         {
-
-            int x0, A, C, M, n;
-
-            n = int.Parse(txtCantidad.Text);
-            float[] arr = new float[n];
-            x0 = int.Parse(txtX.Text);
-            A = int.Parse(txta.Text);
-            C = int.Parse(txtc.Text);
-            M = int.Parse(txtm.Text);
-
-            for (int i = 0; i < n; i++)
+            try
             {
-                int r = dgvPseudoaleatorio.Rows.Add();
+                int x0, A, C, M, n;
 
-                dgvPseudoaleatorio.Rows[r].Cells[0].Value = i + 1;
+                n = int.Parse(txtCantidad.Text);
+                float[] arr = new float[n];
+                x0 = int.Parse(txtX.Text);
+                A = int.Parse(txta.Text);
+                C = int.Parse(txtc.Text);
+                M = int.Parse(txtm.Text);
 
-                float aux = (x0 * A + C);
-                float most = x0 * A;
-                //dgvPseudoaleatorio.Rows[r].Cells[3].Value = aux;
-                //dgvPseudoaleatorio.Rows[r].Cells[4].Value = most;
+                for (int i = 0; i < n; i++)
+                {
+                    int r = dgvPseudoaleatorio.Rows.Add();
 
-                aux %= M;
-                aux = aux / M;
-                arr[i] = aux;
-                x0 = Convert.ToInt32(aux * M);
+                    dgvPseudoaleatorio.Rows[r].Cells[0].Value = i + 1;
 
-                dgvPseudoaleatorio.Rows[r].Cells[1].Value = aux.ToString();
-                //dgvPseudoaleatorio.Rows[r].Cells[2].Value = i.ToString() + "--" + x0.ToString();
+                    float aux = (x0 * A + C);
+                    float most = x0 * A;
+                    //dgvPseudoaleatorio.Rows[r].Cells[3].Value = aux;
+                    //dgvPseudoaleatorio.Rows[r].Cells[4].Value = most;
+
+                    aux %= M;
+                    aux = aux / M;
+                    arr[i] = aux;
+                    x0 = Convert.ToInt32(aux * M);
+
+                    dgvPseudoaleatorio.Rows[r].Cells[1].Value = aux.ToString();
+                    //dgvPseudoaleatorio.Rows[r].Cells[2].Value = i.ToString() + "--" + x0.ToString();
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show("El formato de entrada no es el correcto.\nIntente de nuevo","Error",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
         }
 
@@ -457,7 +462,7 @@ namespace Simulacion1._1
 
         private void pbxCerrar_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -465,7 +470,23 @@ namespace Simulacion1._1
             dgvPseudoaleatorio.Rows.Clear();
             dgvValores.Rows.Clear();
             dgvContaminantes.Rows.Clear();
+            dgvresultado.Rows.Clear();
+            dgvResultadoContaminantes.Rows.Clear();
+            dgvMuestra.Rows.Clear();
 
+            dgvMuestra.Rows.Add("Alto grado de acidez", "0.18", "0", "0");
+            dgvMuestra.Rows.Add("Estado de anemia aguda", "0.08", "0", "0");
+            dgvMuestra.Rows.Add("Estado en rango normal", "0.35", "0", "0");
+            dgvMuestra.Rows.Add("Exceso de glucosa", "0.17", "0", "0");
+            dgvMuestra.Rows.Add("Alto grado de alcalinidad", "0.22", "0", "0");
+
+            dgvContaminantes.Rows.Add("Substancias coloidales", "0.05", "0", "0");
+            dgvContaminantes.Rows.Add("Exceso de mercurio", "0.10", "0", "0");
+            dgvContaminantes.Rows.Add("Residuos petroquimicos", "0.25", "0", "0");
+            dgvContaminantes.Rows.Add("Sulfatos", "0.15", "0", "0");
+            dgvContaminantes.Rows.Add("Acido Clorhidrico", "0.12", "0", "0");
+            dgvContaminantes.Rows.Add("Fosfato", "0.16", "0", "0");
+            dgvContaminantes.Rows.Add("óxidos", "0.17", "0", "0");
         }
     }
     
