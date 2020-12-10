@@ -254,6 +254,7 @@
             this.btnPrueba2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrueba2.Textcolor = System.Drawing.Color.White;
             this.btnPrueba2.TextFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrueba2.Click += new System.EventHandler(this.btnPrueba2_Click);
             // 
             // Form1
             // 

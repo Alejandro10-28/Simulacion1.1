@@ -446,6 +446,11 @@ namespace Simulacion1._1
 
             }
         }
+
+        private void PruebaM_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

@@ -72,5 +72,10 @@ namespace Simulacion1._1
             prueba.Show();
             this.Hide();
         }
+
+        private void btnPrueba2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

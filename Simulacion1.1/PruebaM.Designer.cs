@@ -88,6 +88,8 @@
             this.bunifuCustomLabel10 = new ns1.BunifuCustomLabel();
             this.btnB2 = new ns1.BunifuThinButton2();
             this.dgvValores = new System.Windows.Forms.DataGridView();
+            this.Cmuestras = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ccontaminantes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBusqueda = new ns1.BunifuThinButton2();
             this.btnComparar = new ns1.BunifuThinButton2();
             this.dgvresultado = new System.Windows.Forms.DataGridView();
@@ -102,11 +104,21 @@
             this.bunifuCustomLabel9 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel8 = new ns1.BunifuCustomLabel();
             this.dgvContaminantes = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cfrecuencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnCalculo = new ns1.BunifuThinButton2();
             this.dgvPseudoaleatorio = new System.Windows.Forms.DataGridView();
             this.Cvalores = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Crn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvMuestra = new System.Windows.Forms.DataGridView();
+            this.Datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cprobabilidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClimInf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClimSup = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cfrecuencias = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtm = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.txtX = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -121,18 +133,6 @@
             this.btnGenerador = new ns1.BunifuImageButton();
             this.bunifuCustomLabel7 = new ns1.BunifuCustomLabel();
             this.txtCantidad = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.Cmuestras = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ccontaminantes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Datos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cprobabilidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClimInf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClimSup = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cfrecuencias = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cfrecuencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlarriba.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaximizar)).BeginInit();
@@ -591,6 +591,17 @@
             this.dgvValores.Size = new System.Drawing.Size(244, 271);
             this.dgvValores.TabIndex = 47;
             // 
+            // Cmuestras
+            // 
+            this.Cmuestras.HeaderText = "Sangre";
+            this.Cmuestras.Name = "Cmuestras";
+            // 
+            // Ccontaminantes
+            // 
+            this.Ccontaminantes.HeaderText = "Contaminantes";
+            this.Ccontaminantes.MinimumWidth = 10;
+            this.Ccontaminantes.Name = "Ccontaminantes";
+            // 
             // btnBusqueda
             // 
             this.btnBusqueda.ActiveBorderThickness = 1;
@@ -837,6 +848,35 @@
             this.dgvContaminantes.TabIndex = 38;
             this.dgvContaminantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContaminantes_CellContentClick);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Datos";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Probabilidad";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Lim.Inf";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Lim.Sup";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // cfrecuencia
+            // 
+            this.cfrecuencia.HeaderText = "Frecuencia";
+            this.cfrecuencia.Name = "cfrecuencia";
+            this.cfrecuencia.ReadOnly = true;
+            // 
             // BtnCalculo
             // 
             this.BtnCalculo.ActiveBorderThickness = 1;
@@ -985,6 +1025,35 @@
             this.dgvMuestra.Size = new System.Drawing.Size(271, 271);
             this.dgvMuestra.TabIndex = 33;
             this.dgvMuestra.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMuestra_CellContentClick);
+            // 
+            // Datos
+            // 
+            this.Datos.HeaderText = "Datos";
+            this.Datos.Name = "Datos";
+            this.Datos.ReadOnly = true;
+            // 
+            // Cprobabilidad
+            // 
+            this.Cprobabilidad.HeaderText = "Probabilidad";
+            this.Cprobabilidad.Name = "Cprobabilidad";
+            // 
+            // ClimInf
+            // 
+            this.ClimInf.HeaderText = "Lim.Inf";
+            this.ClimInf.Name = "ClimInf";
+            this.ClimInf.ReadOnly = true;
+            // 
+            // ClimSup
+            // 
+            this.ClimSup.HeaderText = "Lim.Sup";
+            this.ClimSup.Name = "ClimSup";
+            this.ClimSup.ReadOnly = true;
+            // 
+            // Cfrecuencias
+            // 
+            this.Cfrecuencias.HeaderText = "Frecuencia";
+            this.Cfrecuencias.Name = "Cfrecuencias";
+            this.Cfrecuencias.ReadOnly = true;
             // 
             // groupBox1
             // 
@@ -1151,75 +1220,6 @@
             this.txtCantidad.TabIndex = 6;
             this.txtCantidad.Text = "100";
             // 
-            // Cmuestras
-            // 
-            this.Cmuestras.HeaderText = "Sangre";
-            this.Cmuestras.Name = "Cmuestras";
-            // 
-            // Ccontaminantes
-            // 
-            this.Ccontaminantes.HeaderText = "Contaminantes";
-            this.Ccontaminantes.MinimumWidth = 10;
-            this.Ccontaminantes.Name = "Ccontaminantes";
-            // 
-            // Datos
-            // 
-            this.Datos.HeaderText = "Datos";
-            this.Datos.Name = "Datos";
-            this.Datos.ReadOnly = true;
-            // 
-            // Cprobabilidad
-            // 
-            this.Cprobabilidad.HeaderText = "Probabilidad";
-            this.Cprobabilidad.Name = "Cprobabilidad";
-            // 
-            // ClimInf
-            // 
-            this.ClimInf.HeaderText = "Lim.Inf";
-            this.ClimInf.Name = "ClimInf";
-            this.ClimInf.ReadOnly = true;
-            // 
-            // ClimSup
-            // 
-            this.ClimSup.HeaderText = "Lim.Sup";
-            this.ClimSup.Name = "ClimSup";
-            this.ClimSup.ReadOnly = true;
-            // 
-            // Cfrecuencias
-            // 
-            this.Cfrecuencias.HeaderText = "Frecuencia";
-            this.Cfrecuencias.Name = "Cfrecuencias";
-            this.Cfrecuencias.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Datos";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Probabilidad";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Lim.Inf";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Lim.Sup";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // cfrecuencia
-            // 
-            this.cfrecuencia.HeaderText = "Frecuencia";
-            this.cfrecuencia.Name = "cfrecuencia";
-            this.cfrecuencia.ReadOnly = true;
-            // 
             // PruebaM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1231,6 +1231,7 @@
             this.Name = "PruebaM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PruebaM";
+            this.Load += new System.EventHandler(this.PruebaM_Load);
             this.pnlarriba.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaximizar)).EndInit();
